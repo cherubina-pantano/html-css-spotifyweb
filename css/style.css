@@ -9,23 +9,28 @@ body {
   font-size: 16px;
 }
 
+h2 {
+  margin: 10px;
+}
+/* APP GENERAL */
 .app {
   display: flex;
   flex-direction: column;
   height: 100vh;
   background-color: grey;
 }
-
+/* MAIN CONTENT */
 .main-content {
   display: flex;
   flex-direction: row;
 }
 
+/* SIDBAR */
 .sidebar {
   width: 230px;
   background: black;
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;
   justify-content: space-between;
 }
 
@@ -35,6 +40,7 @@ body {
   background: darkgrey;
 }
 
+/* CONTENT */
 .content {
   position: relative;
   flex-grow: 1;
@@ -61,7 +67,30 @@ body {
   padding: 80px 15px 30px;
 }
 
+.content-scroll .nav-content {
+  background: lightgray;
+  height: 60px;
+}
+
+.content-category {
+  display: flex;
+}
+
+.box-category {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  background: #fff;
+  opacity: .9;
+  border: 1px solid black;
+  color: black;
+}
+.circle-category {
+  border-radius: 50%;
+}
+/* BOTTOM PLAYER */
 .player {
-  height: 80px;
+  display: flex;
+  justify-content: space-between;
   background-color: darkblue;
 }

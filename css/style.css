@@ -5,19 +5,40 @@
 }
 
 body {
-  color: #fff;
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
+  color: #fff;
+
 }
 
-h2 {
-  margin: 10px;
+/* UTILITY*/
+
+img {
+  max-width: 100%;
 }
+
+h2,
+h3,
+h4 {
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+span {
+    font-size: 12px;
+    padding: 5px;
+    opacity: .3;
+}
+.text-center {
+  text-align: center;
+}
+
 /* APP GENERAL */
 .app {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  background-color: grey;
+  background-color: #141921;
 }
 
 /* MAIN CONTENT */
@@ -81,22 +102,28 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-
-  /* opacity: .9;
-  border: 1px solid black;
-  color: black; */
 }
 
 .album-list .album-items {
   flex-basis: calc(100% / 6 - 10px);
-  height: 200px;
   margin-right:  10px;
-  margin-bottom:  10px;
-  background: #fff;
+  margin-bottom:  15px;
 }
-.circle-category {
+
+.album-list .album-items h4 {
+  font-size: 14px;
+   margin-top: 10px;
+   margin-bottom: 5px;
+}
+
+.album-list.circle-category {
+  overflow: hidden;
+}
+
+.circle-category img {
   border-radius: 50%;
 }
+
 /* BOTTOM PLAYER */
 .player {
   display: flex;
